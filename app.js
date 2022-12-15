@@ -23,3 +23,10 @@ document.querySelector("#search-form").addEventListener("submit", (event) => {
   let searchQuery = document.querySelector("#search-input").value;
   searchGoogle(searchQuery);
 });
+
+// Make sure app looks the same on both web and mobile
+window.addEventListener("resize", () => {
+  // Recalculate layout
+  if (window.innerWidth <= 500) {
+    mainContainer.style.width = "100%";
+  });
