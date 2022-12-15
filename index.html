@@ -8,7 +8,8 @@
         font-family: sans-serif;
       }
       #main-container {
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         padding: 20px;
         margin: auto;
         background-color: transparent;
@@ -21,6 +22,11 @@
         right: 10px;
         background-color: transparent;
         border-radius: 50%;
+      }
+      @media (max-width: 500px) {
+        #main-container {
+          width: 100%;
+        }
       }
     </style>
   </head>
